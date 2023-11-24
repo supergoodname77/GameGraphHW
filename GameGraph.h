@@ -1,4 +1,3 @@
-
 //---------------------------------------------------------------
 // File: GameGraph.h
 // Purpose: Header file for a D&D game class
@@ -34,6 +33,7 @@ class GameGraph
         // and describe first room.
         bool doCommand(char *cmd); // Execute a command
         void PrintAll();
+        bool FindDoor(char cardinal);
     private:
         void getNextLine(char *line, int lineLen);
         void setLink(int roomIdx, int linkIdx, char dCode);
