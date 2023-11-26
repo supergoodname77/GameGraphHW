@@ -33,7 +33,8 @@ class GameGraph
         // and describe first room.
         bool doCommand(char *cmd); // Execute a command
         void PrintAll();
-        bool FindDoor(char cardinal);
+        bool FindDoor(int CurrentRoom, char cardinal);
+        int GoDoor(int CurrentRoom, char cardinal);
     private:
         void getNextLine(char *line, int lineLen);
         void setLink(int roomIdx, int linkIdx, char dCode);
